@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<!-- saved from url=(0110)http://localhost:63342/E_Commerce_Project/target/cucumber-report-html/cucumber-html-reports/step-overview.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style data-merge-styles="true"></style>
+  
+
+
+<script type="text/javascript" src="./Cucumber-JVM Reports - Steps Overview_files/jquery.min.js.download"></script>
+<script type="text/javascript" src="./Cucumber-JVM Reports - Steps Overview_files/jquery.tablesorter.min.js.download"></script>
+<script type="text/javascript" src="./Cucumber-JVM Reports - Steps Overview_files/Chart.min.js.download"></script>
+<script type="text/javascript" src="./Cucumber-JVM Reports - Steps Overview_files/bootstrap.min.js.download"></script>
+
+<link rel="stylesheet" href="./Cucumber-JVM Reports - Steps Overview_files/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="./Cucumber-JVM Reports - Steps Overview_files/reporting.css" type="text/css">
+<link rel="stylesheet" href="./Cucumber-JVM Reports - Steps Overview_files/font-awesome.min.css">
+<link rel="shortcut icon" href="http://localhost:63342/E_Commerce_Project/target/cucumber-report-html/cucumber-html-reports/images/favicon.png">
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+<style type="text/css" id="c5fdaeb2-4005-469c-b937-2549d56bfbbe">.c95fa017-977a-42be-a5ae-c0fca252f688 { position: relative !important; border-radius: 0.2em !important; padding: 0px !important; margin: 0px !important; }
+
+.daa6d724-6a29-41d0-acff-57216c39d557 .ssh-close { position: absolute; left: -8px; top: -8px; width: 16px; height: 16px; z-index: 999; border: none; background: url("data:image/png;base64,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") no-repeat border-box; animation-duration: 275ms; animation-timing-function: ease-out; box-shadow: none; animation-name: e553543c-0d5d-4802-92ff-df0849f72380; }
+
+.daa6d724-6a29-41d0-acff-57216c39d557 .ssh-close:hover, .daa6d724-6a29-41d0-acff-57216c39d557 .ssh-close:focus { background-image: url("data:image/png;base64,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"); }
+
+@media print {
+  .daa6d724-6a29-41d0-acff-57216c39d557 { box-shadow: unset !important; -webkit-print-color-adjust: exact !important; }
+}
+
+@keyframes e553543c-0d5d-4802-92ff-df0849f72380 { 
+  0% { opacity: 0; transform: scale(0.6); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes d3b1c6dc-d8bb-4f76-83ba-0f8bb4272ba2 { 
+  100% { opacity: 0; transform: scale(0.3); }
+}
+
+.daa6d724-6a29-41d0-acff-57216c39d557 { background-color: rgba(238, 238, 238, 0.6); color: rgb(170, 170, 170); font: inherit; box-shadow: rgb(238, 238, 238) 0px 0px 0.35em; text-shadow: none !important; }
+
+.default-red-aa94e3d5-ab2f-4205-b74e-18ce31c7c0ce { box-shadow: rgb(255, 128, 128) 0px 0px 0.35em; background-color: rgba(255, 128, 128, 0.6) !important; color: rgb(0, 0, 0) !important; }
+
+.default-orange-da01945e-1964-4d27-8a6c-3331e1fe7f14 { box-shadow: rgb(255, 210, 170) 0px 0px 0.35em; background-color: rgba(255, 210, 170, 0.6) !important; color: rgb(0, 0, 0) !important; }
+
+.default-yellow-aaddcf5c-0e41-4f83-8a64-58c91f7c6250 { box-shadow: rgb(255, 255, 170) 0px 0px 0.35em; background-color: rgba(255, 255, 170, 0.6) !important; color: rgb(0, 0, 0) !important; }
+
+.default-green-c4d41e0a-e40f-4c3f-91ad-2d66481614c2 { box-shadow: rgb(170, 255, 170) 0px 0px 0.35em; background-color: rgba(170, 255, 170, 0.6) !important; color: rgb(0, 0, 0) !important; }
+
+.default-cyan-f88e8827-e652-4d79-a9d9-f6c8b8ec9e2b { box-shadow: rgb(170, 255, 255) 0px 0px 0.35em; background-color: rgba(170, 255, 255, 0.6) !important; color: rgb(0, 0, 0) !important; }
+
+.default-purple-c472dcdb-f2b8-41ab-bb1e-2fb293df172a { box-shadow: rgb(255, 170, 255) 0px 0px 0.35em; background-color: rgba(255, 170, 255, 0.6) !important; color: rgb(0, 0, 0) !important; }
+
+.default-grey-da7cb902-89c6-46fe-b0e7-d3b35aaf237a { box-shadow: rgb(119, 119, 119) 0px 0px 0.35em; background-color: rgba(119, 119, 119, 0.6) !important; color: rgb(255, 255, 255) !important; }</style></head>
+<body data-new-gr-c-s-check-loaded="14.1058.0" data-gr-ext-installed="">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation"><a href="http://localhost:63342/E_Commerce_Project/target/cucumber-report-html/cucumber-html-reports/feature-overview.html">Features</a></li>
+        <li role="presentation"><a href="http://localhost:63342/E_Commerce_Project/target/cucumber-report-html/cucumber-html-reports/tag-overview.html">Tags</a></li>
+        <li role="presentation" class="active"><a href="http://localhost:63342/E_Commerce_Project/target/cucumber-report-html/cucumber-html-reports/step-overview.html">Steps</a></li>
+        <li role="presentation"><a href="http://localhost:63342/E_Commerce_Project/target/cucumber-report-html/cucumber-html-reports/failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>CucumberWebGui</td>
+                          <td>1</td>
+                        <td>04 May 2022, 08:54</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid&gt;
+  &lt;div class=" row"="">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover tablesorter tablesorter-default" role="grid">
+
+          <thead>
+            <tr class="header tablesorter-headerRow" role="row">
+              <th data-column="0" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="tablesorter" unselectable="on" aria-sort="none" aria-label="Implementation: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Implementation</div></th>
+              <th data-column="1" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="tablesorter" unselectable="on" aria-sort="none" aria-label="Occurrences: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Occurrences</div></th>
+              <th data-column="2" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="tablesorter" unselectable="on" aria-sort="none" aria-label="Duration: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Duration</div></th>
+              <th data-column="3" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="tablesorter" unselectable="on" aria-sort="none" aria-label="Average: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Average</div></th>
+              <th data-column="4" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col" role="columnheader" aria-disabled="false" aria-controls="tablesorter" unselectable="on" aria-sort="none" aria-label="Ratio: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Ratio</div></th>
+            </tr>
+          </thead>
+
+          <tbody aria-live="polite" aria-relevant="all">
+                          <tr role="row">
+                <td class="location">StepDefinitions.AddCompareListStepDefinition.AddProductsToCompareList()</td>
+                <td>1</td>
+                <td class="duration" data-value="8129597300">8s 129ms</td>
+                <td class="duration" data-value="8129597300">8s 129ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.AddCompareListStepDefinition.AssertSuccessfulAddingToCompareList()</td>
+                <td>1</td>
+                <td class="duration" data-value="46559100">046ms</td>
+                <td class="duration" data-value="46559100">046ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.AddCompareListStepDefinition.GotoCompareList()</td>
+                <td>1</td>
+                <td class="duration" data-value="3687670700">3s 687ms</td>
+                <td class="duration" data-value="3687670700">3s 687ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.AddShoppingCartStepDefinition.AddAnotherProductToCart(java.lang.String,java.lang.String)</td>
+                <td>2</td>
+                <td class="duration" data-value="13347620600">13s 347ms</td>
+                <td class="duration" data-value="6673810300">6s 673ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.AddShoppingCartStepDefinition.AddToCart()</td>
+                <td>4</td>
+                <td class="duration" data-value="20176884000">20s 176ms</td>
+                <td class="duration" data-value="5044221000">5s 044ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.AddShoppingCartStepDefinition.AssertSuccessfulAddingToCart()</td>
+                <td>1</td>
+                <td class="duration" data-value="24679500">024ms</td>
+                <td class="duration" data-value="24679500">024ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.AddShoppingCartStepDefinition.GotoShoppingCart()</td>
+                <td>2</td>
+                <td class="duration" data-value="7498429900">7s 498ms</td>
+                <td class="duration" data-value="3749214950">3s 749ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.AddWishlistStepDefinition.AddAnotherProductToWishlist()</td>
+                <td>1</td>
+                <td class="duration" data-value="8470725900">8s 470ms</td>
+                <td class="duration" data-value="8470725900">8s 470ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.AddWishlistStepDefinition.AddProduct1ToWishlist()</td>
+                <td>1</td>
+                <td class="duration" data-value="32336700">032ms</td>
+                <td class="duration" data-value="32336700">032ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.AddWishlistStepDefinition.AddProduct2ToWishlist()</td>
+                <td>1</td>
+                <td class="duration" data-value="37742500">037ms</td>
+                <td class="duration" data-value="37742500">037ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.AddWishlistStepDefinition.AssertSuccessfulAddingToWishlist()</td>
+                <td>1</td>
+                <td class="duration" data-value="30928100">030ms</td>
+                <td class="duration" data-value="30928100">030ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.AddWishlistStepDefinition.GotoWishlist()</td>
+                <td>1</td>
+                <td class="duration" data-value="3621709700">3s 621ms</td>
+                <td class="duration" data-value="3621709700">3s 621ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.CategoriesSelectionStepDefinition.Select_Hover_Open(java.lang.String,java.lang.String)</td>
+                <td>3</td>
+                <td class="duration" data-value="11640903300">11s 640ms</td>
+                <td class="duration" data-value="3880301100">3s 880ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.CategoriesSelectionStepDefinition.SuccessfulAccessingSubcategory(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="15314800">015ms</td>
+                <td class="duration" data-value="15314800">015ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.CloseBrowser.CloseBrowser()</td>
+                <td>12</td>
+                <td class="duration" data-value="2526199300">2s 526ms</td>
+                <td class="duration" data-value="210516608">210ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.ColorFilterStepDefinition.ColorFilter()</td>
+                <td>1</td>
+                <td class="duration" data-value="8293499500">8s 293ms</td>
+                <td class="duration" data-value="8293499500">8s 293ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.ColorFilterStepDefinition.SuccessfulColorFiltering()</td>
+                <td>1</td>
+                <td class="duration" data-value="15295700">015ms</td>
+                <td class="duration" data-value="15295700">015ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.CreateOrderStepDefinition.AssertSuccessfulOrder()</td>
+                <td>1</td>
+                <td class="duration" data-value="46544800">046ms</td>
+                <td class="duration" data-value="46544800">046ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.CreateOrderStepDefinition.Checkout()</td>
+                <td>1</td>
+                <td class="duration" data-value="1514668800">1s 514ms</td>
+                <td class="duration" data-value="1514668800">1s 514ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.CreateOrderStepDefinition.FillPersonalData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="9327097900">9s 327ms</td>
+                <td class="duration" data-value="9327097900">9s 327ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.CreateOrderStepDefinition.OrderConfirmation()</td>
+                <td>1</td>
+                <td class="duration" data-value="3053035000">3s 053ms</td>
+                <td class="duration" data-value="3053035000">3s 053ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.CreateOrderStepDefinition.PaymentInformationEntry(java.lang.String,java.lang.String,java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="4246777800">4s 246ms</td>
+                <td class="duration" data-value="4246777800">4s 246ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.CreateOrderStepDefinition.PaymentMethodSelection()</td>
+                <td>1</td>
+                <td class="duration" data-value="4090184000">4s 090ms</td>
+                <td class="duration" data-value="4090184000">4s 090ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.CreateOrderStepDefinition.ShippingMethodSelection()</td>
+                <td>1</td>
+                <td class="duration" data-value="4081235800">4s 081ms</td>
+                <td class="duration" data-value="4081235800">4s 081ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.CurrencySwitchStepDefinition.CurrencySwitching()</td>
+                <td>1</td>
+                <td class="duration" data-value="6738901800">6s 738ms</td>
+                <td class="duration" data-value="6738901800">6s 738ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.CurrencySwitchStepDefinition.SuccessfulCurrencySwitching()</td>
+                <td>1</td>
+                <td class="duration" data-value="15733100">015ms</td>
+                <td class="duration" data-value="15733100">015ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.LoginStepDefinition.ClickLoginButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="3716054100">3s 716ms</td>
+                <td class="duration" data-value="3716054100">3s 716ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.LoginStepDefinition.EnterValidData(java.lang.String,java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="76792900">076ms</td>
+                <td class="duration" data-value="76792900">076ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.LoginStepDefinition.GotoLoginPage()</td>
+                <td>1</td>
+                <td class="duration" data-value="627411400">627ms</td>
+                <td class="duration" data-value="627411400">627ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.LoginStepDefinition.SuccessfulLogin()</td>
+                <td>1</td>
+                <td class="duration" data-value="37643500">037ms</td>
+                <td class="duration" data-value="37643500">037ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.OpenBrowser.OpenBrowser()</td>
+                <td>12</td>
+                <td class="duration" data-value="60784484500">1m 784ms</td>
+                <td class="duration" data-value="5065373708">5s 065ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.RegisterStepDefinition.DirectionToHompage()</td>
+                <td>1</td>
+                <td class="duration" data-value="540295600">540ms</td>
+                <td class="duration" data-value="540295600">540ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.RegisterStepDefinition.EnterValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="357419500">357ms</td>
+                <td class="duration" data-value="357419500">357ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.RegisterStepDefinition.GotoRegisterPage()</td>
+                <td>1</td>
+                <td class="duration" data-value="629318000">629ms</td>
+                <td class="duration" data-value="629318000">629ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.RegisterStepDefinition.RegisterButtonClick()</td>
+                <td>1</td>
+                <td class="duration" data-value="4034192200">4s 034ms</td>
+                <td class="duration" data-value="4034192200">4s 034ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.RegisterStepDefinition.SuccessfulRegistration()</td>
+                <td>1</td>
+                <td class="duration" data-value="46865000">046ms</td>
+                <td class="duration" data-value="46865000">046ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.ResetPasswordStepDefinition.ClickonRecover()</td>
+                <td>1</td>
+                <td class="duration" data-value="3468753400">3s 468ms</td>
+                <td class="duration" data-value="3468753400">3s 468ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.ResetPasswordStepDefinition.EnterEmail(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="42885000">042ms</td>
+                <td class="duration" data-value="42885000">042ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.ResetPasswordStepDefinition.GotoLoginPageThenForgetPassword()</td>
+                <td>1</td>
+                <td class="duration" data-value="3549169700">3s 549ms</td>
+                <td class="duration" data-value="3549169700">3s 549ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.ResetPasswordStepDefinition.ResetMessage()</td>
+                <td>1</td>
+                <td class="duration" data-value="15306800">015ms</td>
+                <td class="duration" data-value="15306800">015ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.SearchStepDefinition.AlreadyLogged(java.lang.String,java.lang.String)</td>
+                <td>9</td>
+                <td class="duration" data-value="41545591900">41s 545ms</td>
+                <td class="duration" data-value="4616176877">4s 616ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.SearchStepDefinition.NavigateToProductPage()</td>
+                <td>1</td>
+                <td class="duration" data-value="2312036200">2s 312ms</td>
+                <td class="duration" data-value="2312036200">2s 312ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.SearchStepDefinition.SearchForProduct(java.lang.String)</td>
+                <td>5</td>
+                <td class="duration" data-value="3371334900">3s 371ms</td>
+                <td class="duration" data-value="674266980">674ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.SelectedTagsStepDefinition.SelectTag(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="6699917500">6s 699ms</td>
+                <td class="duration" data-value="6699917500">6s 699ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr role="row">
+                <td class="location">StepDefinitions.SelectedTagsStepDefinition.SuccessfullTagDirection()</td>
+                <td>1</td>
+                <td class="duration" data-value="15288300">015ms</td>
+                <td class="duration" data-value="15288300">015ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr role="row">
+              <td data-column="0">45</td>
+              <td data-column="1">86</td>
+              <td class="duration" data-column="2">4m 12s 581ms</td>
+              <td class="duration" data-column="3">2s 936ms</td>
+              <td data-column="4">Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+
+
+<div id="weava-permanent-marker" date="1651653597195"></div><div id="weava-ui-wrapper"><div class="weava-drop-area-wrapper"><div class="weava-drop-area"></div>
+<div class="weava-drop-area-text">Drop here!</div>
+</div></div></body><editor-card style="position:absolute;top:0px;left:0px;z-index:auto;display: block !important"><div dir="ltr" style="all: initial;"><div style="color: initial; font: initial; font-feature-settings: initial; font-kerning: initial; font-optical-sizing: initial; font-synthesis: initial; font-variation-settings: initial; forced-color-adjust: initial; text-orientation: initial; text-rendering: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; animation: initial; app-region: initial; appearance: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; color-scheme: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-block-size: initial; contain-intrinsic-size: initial; contain-intrinsic-inline-size: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: initial; dominant-baseline: initial; empty-cells: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; inline-size: initial; inset-block: initial; inset-inline: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask: initial; mask-type: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; offset: initial; opacity: initial; order: initial; origin-trial-test-property: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-clip-margin: initial; overflow-wrap: initial; overflow: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position: absolute; quotes: initial; r: initial; resize: initial; ruby-position: initial; rx: initial; ry: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; scrollbar-gutter: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-emphasis: initial; text-emphasis-position: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; user-select: initial; vector-effect: initial; vertical-align: initial; visibility: initial; border-spacing: initial; -webkit-border-image: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-highlight: initial; -webkit-hyphenate-character: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-mask: initial; -webkit-mask-composite: initial; -webkit-perspective-origin-x: initial; -webkit-perspective-origin-y: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-transform-origin-x: initial; -webkit-transform-origin-y: initial; -webkit-transform-origin-z: initial; -webkit-user-drag: initial; -webkit-user-modify: initial; white-space: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647;"><link rel="stylesheet" href="chrome-extension://gpaiobkfhnonedkhhfjpmhdalgeoebfa/fonts/fabric-icons.css"><div style="all: initial;"></div></div></div></editor-card><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
